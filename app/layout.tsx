@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Varela_Round } from "next/font/google";
+
 import "./globals.css";
 
 const geistSans = Geist({
@@ -12,11 +13,17 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const varelaRound = Varela_Round({
+  variable: "--font-varela-round",
+  subsets: ["latin"],
+  weight: "400",
+});
+
 export const metadata: Metadata = {
   title: "Shinobu",
   description: "The official website for shinobu discord bot.",
   icons: {
-    icon: "/favicon.png",
+    icon: "/icon.png",
   },
 };
 
@@ -28,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${varelaRound.variable} antialiased`}
       >
         {children}
       </body>

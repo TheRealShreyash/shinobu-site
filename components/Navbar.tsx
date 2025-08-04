@@ -6,7 +6,7 @@ import Link from "next/link";
 const Navbar = () => {
   //   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <div className="fixed top-0 left-0 right-0 z-50 bg-black/20 backdrop-blur-md border-b border-purple-500/20 px-20 py-7">
+    <div className="fixed top-0 left-0 right-0 z-50 bg-black/20 backdrop-blur-md border-b border-purple-500/20 px-20 py-5">
       <div className="flex items-center justify-between">
         <div className="branding flex items-center w-fit gap-2.5 h-fit">
           <Image
@@ -22,12 +22,16 @@ const Navbar = () => {
         </div>
         <div className="flex gap-12">
           <ul className="flex items-center justify-center gap-5">
-            <li className="cursor-pointer hover:text-purple-500 transition duration-500">
-              Features
-            </li>
-            <li className="cursor-pointer hover:text-purple-500 transition duration-500">
-              Commands
-            </li>
+            <Link href={"#features"}>
+              <li className="cursor-pointer hover:text-purple-500 transition duration-500">
+                Features
+              </li>
+            </Link>
+            <Link href={"#commands"}>
+              <li className="cursor-pointer hover:text-purple-500 transition duration-500">
+                Commands
+              </li>
+            </Link>
             <li className="cursor-pointer hover:text-purple-500 transition duration-500">
               Roadmap
             </li>
