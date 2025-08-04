@@ -30,7 +30,7 @@ const Footer = () => {
 
             <p className="text-gray-400 mb-6 max-w-md leading-relaxed">
               The most robust Discord bot for community management. Built with
-              love and continuously evolving to serve your server's needs.
+              love and continuously evolving to serve your server&apos;s needs.
             </p>
 
             <div className="flex items-center space-x-4">
