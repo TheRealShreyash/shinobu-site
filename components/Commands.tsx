@@ -41,29 +41,29 @@ const Commands = () => {
       ],
       gradient: "from-purple-400 to-violet-500",
     },
-    // {
-    //   title: "Utility",
-    //   icon: Zap,
-    //   commands: [
-    //     {
-    //       name: "/info server",
-    //       description: "Display server information and stats",
-    //     },
-    //     {
-    //       name: "/info user <@user>",
-    //       description: "Get detailed user information",
-    //     },
-    //     {
-    //       name: "/settings view",
-    //       description: "View current bot configuration",
-    //     },
-    //     {
-    //       name: "/help <command>",
-    //       description: "Get help for specific commands",
-    //     },
-    //   ],
-    //   gradient: "from-cyan-400 to-blue-500",
-    // },
+    {
+      title: "Utility",
+      icon: Zap,
+      commands: [
+        // {
+        //   name: "/info server",
+        //   description: "Display server information and stats",
+        // },
+        // {
+        //   name: "/info user <@user>",
+        //   description: "Get detailed user information",
+        // },
+        // {
+        //   name: "/settings view",
+        //   description: "View current bot configuration",
+        // },
+        // {
+        //   name: "/help <command>",
+        //   description: "Get help for specific commands",
+        // },
+      ],
+      gradient: "from-cyan-400 to-blue-500",
+    },
   ];
 
   return (
