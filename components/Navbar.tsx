@@ -40,11 +40,17 @@ const Navbar = () => {
           <div className="buttons flex gap-2">
             <Link href={"https://discord.gg/q4fZeFw4XF"}>
               <button className="px-5 py-2 font-semibold rounded-md bg-purple-500 hover:bg-purple-600 transition duration-500 cursor-pointer">
-                Support Server
+                Support
               </button>
             </Link>
-            <button className="px-5 py-2 font-semibold rounded-md bg-[#5865F2] hover:bg-[#3344ff] transition duration-500 cursor-pointer">
-              Login With Discord
+            <button className="px-3 py-2 font-semibold rounded-md bg-black hover:bg-[#3B3939] transition duration-500 cursor-pointer flex items-center gap-2 border-1 border-[#292828]">
+              <Image
+                src={"/discord-blurple.svg"}
+                alt="discord"
+                width={20}
+                height={20}
+              />
+              Login
             </button>
           </div>
         </div>
